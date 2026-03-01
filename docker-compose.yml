@@ -1,0 +1,8 @@
+services:
+  speech-biometry:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./db:/app/db
+    restart: unless-stopped

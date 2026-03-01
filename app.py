@@ -7,7 +7,7 @@ from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel
 from typing import Dict, List, Optional
 
-from .speaker import SpeakerBiometry
+from speaker import SpeakerBiometry
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "db", "profiles.npz")
 
